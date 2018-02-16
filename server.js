@@ -10,6 +10,11 @@ var todos = [{
 	id: 2,
 	description: 'return home',
 	compleated: false
+	},
+	{
+	id: 3,
+	description: 'Goto sleep',
+	compleated: false
 	}];
 
 
@@ -22,10 +27,13 @@ app.listen(PORT,function(){
 });  
 
 
-app.get('/todos/:id',function (req,res){
-	res.send('Asking for todo with id of '+ req.params.id);
-});
+// app.get('/todos/:id',function (req, res) {
+// 	var todoId = req.params.id;
+// 	var matchedId;
 
-app.get('/todos',function(res,req){
-	res.json(todos);
-});
+// 	res.send('Asking for todo with id of '+ req.params.id);
+// });
+
+// app.get('/todos',function (res, req) {
+// 	res.json(todos);
+// });
