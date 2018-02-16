@@ -35,5 +35,5 @@ app.listen(PORT,function(){
 // });
 
 app.get('/todos',function (res, req) {
-	res.json(todos);
+	res.send(JSON.stringify(todos));
 });
