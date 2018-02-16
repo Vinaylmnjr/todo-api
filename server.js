@@ -34,6 +34,6 @@ app.listen(PORT,function(){
 // 	res.send('Asking for todo with id of '+ req.params.id);
 // });
 
-// app.get('/todos',function (res, req) {
-// 	res.json(todos);
-// });
+app.get('/todos',function (res, req) {
+	res.json(todos);
+});
