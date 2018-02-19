@@ -5,11 +5,13 @@ var todos = [{
 	id: 1,
 	description: 'Meet mom for lunch',
 	completed: false
-}, {
+},
+{
 	id: 2,
 	description: 'Go to market',
 	completed: false
-}, {
+},
+{
 	id: 3,
 	description: 'Feed the cat',
 	completed: true
@@ -26,7 +28,7 @@ app.get('/todos', function (req, res) {
 
 // GET /todos/:id
 app.get('/todos/:id', function(req, res){
-	res.send('Asking for todo id '+ res.params.id);
+	res.send('Asking for todo id '+ req.params.id);
 });
 
 
