@@ -25,6 +25,9 @@ app.get('/todos', function (req, res) {
 });
 
 // GET /todos/:id
+app.get('/todos/:id', function(req, res){
+	res.send('Asking for todo id '+ res.params.id);
+});
 
 
 app.listen(PORT, function () {
